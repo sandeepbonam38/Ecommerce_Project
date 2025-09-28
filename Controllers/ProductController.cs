@@ -21,15 +21,25 @@ namespace API.Controllers
             return await _context.Products.ToListAsync();
         }
 
-        // [HttpGet("{id}")]
-        // public async Task<ActionResult<Product>> GetProducts(int id)
-        // {     
-        //     var products = await _context.Products.FindAsync(id);
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Product>> GetProducts(int id)
+        {
+            var products = await _context.Products.FindAsync(id);
 
-        //     if (products == null) return NotFound();
+            // if (products == null) return NotFound();
 
-        //     return products;
-        // }
+            return products;
+        }
+        
+        [HttpGet("{name}")]
+        public async Task<ActionResult<Product>> GetProductsbyname(string name)
+        {     
+            var products = await _context.Products.FindAsync(name);
+
+            // if (products == null) return NotFound();
+
+            return products;
+        }
 
     }
 }
