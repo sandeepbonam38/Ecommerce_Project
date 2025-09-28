@@ -1,0 +1,31 @@
+# Ignore build artifacts and sensitive files
+*.user
+*.suo
+*.dll
+*.exe
+.env
+
+
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# VS Code
+.vscode/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Database
+*.mdf
+*.ldf
+
+# Optional: Ignore secrets
+appsettings.Development.json
+
