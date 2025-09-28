@@ -31,15 +31,7 @@ namespace API.Controllers
             return products;
         }
         
-        [HttpGet("{name}")]
-        public async Task<ActionResult<Product>> GetProductsbyname(string name)
-        {     
-            var products = await _context.Products.FindAsync(name);
-
-            // if (products == null) return NotFound();
-
-            return products;
-        }
+        
 
     }
 }
