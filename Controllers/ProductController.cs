@@ -24,13 +24,14 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProducts(int id)
         {
-            var products = await _context.Products.FindAsync(id);
+            var products = await _context.Products.Where (s => s.PId == id).FirstOrDefaultAsync();
+            
+
 
             // if (products == null) return NotFound();
 
             return products;
         }
-        
         
 
     }
