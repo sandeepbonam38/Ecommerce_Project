@@ -1,4 +1,4 @@
-# Advanced E-Commerce Platform
+# E-Commerce Platform
 ASP.NET Core 7 + React 18 + Redux + Stripe Payments
 
 A full-scale, real-world E-Commerce Web Application built using modern enterprise technologies and production-ready architecture.
