@@ -13,4 +13,6 @@ public class Product
     public required string ProductType { get; set; }
     public required string ProductBrand { get; set; }
     public int QuantityInStock { get; set; }
+
+
 }

@@ -28,7 +28,7 @@ namespace API.Controllers
             
 
 
-            // if (products == null) return NotFound();
+            if (products == null) return NotFound();
 
             return products;
         }
