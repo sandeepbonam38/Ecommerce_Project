@@ -15,7 +15,7 @@ namespace API.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet("GetProducts")]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
             return await _context.Products.ToListAsync();
@@ -26,10 +26,6 @@ namespace API.Controllers
         {
             var products = await _context.Products.Where (s => s.PId == id).FirstOrDefaultAsync();
             
-
-
-            // if (products == null) return NotFound();
-
             return products;
         }
         

@@ -13,6 +13,12 @@ namespace API.Data
         }
 
         public DbSet<Product> Products { get; set; }
-        
+
+        public DbSet<Users> Users { get; set; }
+
+        public DbSet<Arrest> Arrests { get; set; }
+
+        public DbSet<Sample> Samples { get; set; }
+
     }
 }

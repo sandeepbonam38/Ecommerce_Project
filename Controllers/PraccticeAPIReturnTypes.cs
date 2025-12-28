@@ -398,10 +398,5 @@ namespace API.Controllers
 
             return products;
         }
-
-
-        //IActionResult Type
-        
-
     }
 }
